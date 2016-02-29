@@ -862,6 +862,14 @@ function doCalcdata(gd) {
         if (!cd[0].t) cd[0].t = {};
         cd[0].trace = trace;
 
+        // patch START
+        if (trace.calcdataOverride) {
+           for(var propertyName in trace.calcdataOverride) {
+             cd[0][propertyName] = trace.calcdataOverride[propertyName];
+            }
+        }
+        // patch END
+
         Lib.markTime('done with calcdata for '+i);
         calcdata[i] = cd;
     }

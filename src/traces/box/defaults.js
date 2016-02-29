@@ -41,7 +41,10 @@ module.exports = function supplyDefaults(traceIn, traceOut, defaultColor) {
 
     coerce('whiskerwidth');
     coerce('boxmean');
-
+    // patch START
+    coerce('calcdataOverride');
+    // patch END
+    
     var outlierColorDflt = Lib.coerce2(traceIn, traceOut, attributes, 'marker.outliercolor'),
         lineoutliercolor = coerce('marker.line.outliercolor'),
         boxpoints = outlierColorDflt ||

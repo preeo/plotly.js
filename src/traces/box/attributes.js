@@ -172,5 +172,10 @@ module.exports = {
             description: 'Sets the width (in px) of line bounding the box(es).'
         }
     },
+    // patch START
+    calcdataOverride: {
+       valType: 'any',
+    },
+    // patch END
     fillcolor: scatterAttrs.fillcolor
 };
