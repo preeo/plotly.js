@@ -20,6 +20,7 @@ module.exports = {
     pathToSrc: pathToSrc,
     pathToLib: pathToLib,
 
+    pathToPlotlyCustomIndex: path.join(pathToLib, 'custom-index.js'),
     pathToPlotlyIndex: path.join(pathToLib, 'index.js'),
     pathToPlotlyCore: path.join(pathToSrc, 'core.js'),
     pathToPlotlyBuild: path.join(pathToBuild, 'plotly.js'),
