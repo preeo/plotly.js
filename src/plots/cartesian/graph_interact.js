@@ -910,7 +910,7 @@ function createHoverText(hoverData, opts) {
             tmp.innerHTML = d.name;
             name = tmp.textContent||'';
 
-            if(name.length>15) name = name.substr(0,12)+'...';
+            if(name.length>30) name = name.substr(0,12)+'...';
         }
 
         if(d.zLabel!==undefined) {

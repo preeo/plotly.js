@@ -37,6 +37,10 @@ git clone https://github.com/plotly/plotly.js.git
 ```bash
 npm install plotly.js
 ```
+#### Rebuild scripts
+```bash
+ npm run bundle (in root folder)
+```
 
 #### Use the plotly.js CDN hosted by Fastly:
 ```html
